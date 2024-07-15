@@ -1,0 +1,15 @@
+<form [formGroup]="vehicleForm" (ngSubmit)="onSubmit()">
+  <label>
+    Make:
+    <input formControlName="make">
+  </label>
+  <label>
+    Model:
+    <input formControlName="model">
+  </label>
+  <label>
+    Year:
+    <input formControlName="year">
+  </label>
+  <button type="submit">Add Vehicle</button>
+</form>

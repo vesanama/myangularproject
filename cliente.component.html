@@ -1,0 +1,14 @@
+<form [formGroup]="clienteForm" (ngSubmit)="onSubmit()">
+  <label>
+    Nombre:
+    <input formControlName="nombre">
+  </label>
+  <label>
+    Email:
+    <input formControlName="email">
+  </label>
+  <label>
+    <input type="checkbox" formControlName="contactConsent"> Deseo que me contacten
+  </label>
+  <button type="submit">Add Cliente</button>
+</form>
